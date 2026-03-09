@@ -3,7 +3,7 @@ name = "alice-nfc"
 version = "1.0.0"
 edition = "2021"
 authors = ["Moroya Sakamoto"]
-license = "MIT"
+license = "MIT OR Apache-2.0"
 description = "Pure Rust NFC: NDEF, Tag Type 1-4, APDU, card emulation, anti-collision, TLV"
 
 [lib]
