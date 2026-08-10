@@ -18,8 +18,6 @@ use crate::tag_types::*;
 use crate::tlv::*;
 use crate::uid::*;
 
-use super::*;
-
 // === UID tests ===
 
 #[test]
