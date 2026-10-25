@@ -49,7 +49,8 @@ fn uid_invalid_length() {
 #[test]
 fn uid_bcc() {
     let uid = Uid::new(&[0x01, 0x02, 0x03, 0x04]).unwrap();
-    assert_eq!(uid.bcc(), 0x01 ^ 0x02 ^ 0x03 ^ 0x04);
+    // BCC is the XOR of the UID bytes: 0x01 ^ 0x02 ^ 0x03 ^ 0x04 = 0x04
+    assert_eq!(uid.bcc(), 0x04);
 }
 
 #[test]
